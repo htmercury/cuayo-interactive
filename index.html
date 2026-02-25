@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuayo Interactive — Spiki's Playground</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎃</text></svg>" />
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+
+  <div id="app">
+    <header id="header">
+      <h1>Cuayo Interactive</h1>
+      <p class="subtitle">Spiki's Playground</p>
+    </header>
+
+    <div id="mood-bar-container">
+      <div id="mood-bar">
+        <div id="mood-fill"></div>
+      </div>
+      <span id="mood-label">Happy</span>
+    </div>
+
+    <div id="spiki-area">
+      <div id="speech-bubble" class="hidden">Cuayo~!</div>
+      <div id="pat-counter">Head pats: <span id="pat-count">0</span></div>
+      <div id="spiki"></div>
+    </div>
+
+    <div id="controls">
+      <button id="btn-cuayo" class="btn btn-cuayo">CUAYO!</button>
+      <button id="btn-pumpkin" class="btn btn-pumpkin">Toss Pumpkin</button>
+      <button id="btn-mop" class="btn btn-mop">Mopping Mode</button>
+    </div>
+
+    <div id="pumpkin-collection">
+      <span id="pumpkin-label">Pumpkin Friends:</span>
+      <div id="pumpkin-list"></div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
